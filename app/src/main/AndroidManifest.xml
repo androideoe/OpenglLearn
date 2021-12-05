@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.opengllearn">
 
-    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenglLearn">
+        <activity
+            android:name=".opengl.sticker.CameraTextureViewShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".opengl.sticker.CameraGlSurfaceViewShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".opengl.sticker.CameraSurfaceViewShowActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

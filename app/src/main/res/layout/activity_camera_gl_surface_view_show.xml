@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".opengl.sticker.CameraGlSurfaceViewShowActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/camera_glsurface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_gl_surface_view_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置动画效果" />
+
+    <Button
+        android:id="@+id/btn_gl_surface_view_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btn_gl_surface_view_animator"
+        android:text="切换摄像头"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</RelativeLayout>
